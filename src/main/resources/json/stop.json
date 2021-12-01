@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "name": "stoppage 1",
+  "carrier": "AutoTrans",
+  "transport": [
+    "bus1",
+    "tram1"
+  ],
+  "scedule": [
+    {
+      "transport_id": 1,
+      "stoppage_id": 1,
+      "hours": [
+        "14:00",
+        "15:00"
+      ]
+    },
+    {
+      "transport_id": 2,
+      "stoppage_id": 1,
+      "hours": [
+        "10:00",
+        "12:00"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "type":"bus",
+    "price":7.00,
+    "amount_of_seats":30,
+    "route_id":1,
+    "stopping":"json_ignore(one_to_many)",
+    "scedule":"json_ignore(one_to_many)"
+  },
+  {
+    "id": 1,
+    "type":"bus",
+    "price":7.00,
+    "amount_of_seats":30,
+    "route_id":1,
+    "stopping":"json_ignore(one_to_many)",
+    "scedule":"json_ignore(one_to_many)"
+  }
+]

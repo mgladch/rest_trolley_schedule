@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "number": 1,
+  "title": "route 1",
+  "transport": "bus",
+  "days": [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday"
+  ],
+  "stoppages": [
+    {
+      "prop1": "value1",
+      "prop2": "value2"
+    },
+    {
+      "prop1": "value3",
+      "prop2": "value4"
+    }
+  ]
+}

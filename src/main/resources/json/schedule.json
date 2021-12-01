@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "transport_id": 1,
+    "stoppage_id": 1, (json_ignore)
+    "hours": [
+      "14:00",
+      "15:00"
+    ]
+  },
+  {
+    "id": 2,
+    "transport_id": 2,
+    "stoppage_id": 1,
+    "hours": [
+      "10:00",
+      "12:00"
+    ]
+  }
+]

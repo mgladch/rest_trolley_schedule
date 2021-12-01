@@ -1,0 +1,71 @@
+маршрут має містити сет зупинок і конкретно той транспорт який їде по тому маршруту
+id,number(по суті є також намбером того  транспорту який там їде),title,transport(конкретний транспорт),days(set),set_stoppage(зупинка f_k);
+
+зупинка
+id, name or title, set_of_transport(номер f_k ), schedule(ліст із годинами, коли який транспорт тут є),carrier(перевізник);
+
+батьківський клас транспорту
+id, number, stopping(f_k), route(по якому він їде f_k), type(тип транспорту), price, amount_of_seats, певно ще треба аби тут теж були години їзди
+
+додумати щось чим відрізнити автобус тролейбус трамвай
+
+
+звязки:
+транспорт до розкладу один до багатьох
+транспорт до зупинки один до багатьох
+транспорт до маршруту один до одного напевно
+розклад(и) до зупинки один до багатьох
+
+Зупинка до маршрурту один до багатьох
+
+зупинка до розкладу один до багатьох
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+транспорт
+    //різні транспорти їздять по різних зупинках
+    @ManyToMany(mappedBy = "songInstrumentalist",fetch = FetchType.EAGER)
+    private List<SongPlayers> songItems;
+
+маршрут тут один до однго радше
+
+  //и багато зупинок можуть бути на багатьох зупинках
+    @ManyToMany(mappedBy = "songInstrumentalist",fetch = FetchType.EAGER)
+    private List<SongPlayers> songItems;
+
+зупинка
+    //и багато транспортів
+    и можуть їздити по багатьох зупинках
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<People> songInstrumentalist;
+
+
+    //и багато зупинок може бути в багатьох маршрутах
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<People> songInstrumentalist;
+
+
+
+розклад
